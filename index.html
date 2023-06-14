@@ -7,7 +7,8 @@
   <title>Mi Portafolio</title>
   <link rel="stylesheet" type="text/css" href="css/styles.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.1/css/all.css">
-  <script src="script.js" defer></script>
+  <script src="js/script.js" defer></script>
+  <script src="js/sendEmail.js"></script>
 </head>
 <body>
   <div class="wrapper">
@@ -17,14 +18,14 @@
           <h2>R<span>S</span></h2>
         </div>
         <ul class="menu">
-          <li><a href="#"  class="active">Start</a></li>
-          <li><a href="#">About me</a></li>
-          <li><a href="#">Portafolio</a></li>
-          <li><a href="https://beacons.ai/shalomsotuiontech">Contact</a></li>
+          <li><a href="#main"  class="active">Start</a></li>
+          <li><a href="#about">About me</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
     </header>
-  <main class="main"> 
+  <main id="main" class="main"> 
     <div class="info-content">
       <h1>I'm <span>Rolando</span> Salinas</h1>
        <p>Passionate <b>programmer for technology and software development</b>. With over <em>10 years of experience</em> in designing, implementing, and maintaining web and mobile applications. Specialized in programming languages such as Java, Python, and JavaScript, as well as in handling frameworks such as Spring and React Native. Always looking for new opportunities to continue growing professionally and adding value to innovative projects.</p>
@@ -32,7 +33,7 @@
     </div>
     <img src="img/yo-roly-removebg-preview.png" alt="Mi foto">
     </main>
-    <div class="about">
+    <div id="about"class="about">
       <img src="img/331521980_1264788474382780_7472794212881922851_n.jpg" alt="Roly">
       <div class="about-info">
         <h2>About me</h2>
@@ -42,7 +43,7 @@
         <button class="download-cv">Read more</button>
       </div>
     </div>
-    <div class="portfolio">
+    <div id="portfolio"class="portfolio">
       <div class="portfolio-heading">
         <h2>My Portfolio</h2>
         <div class="divider"></div>
@@ -50,6 +51,7 @@
       <div class="container">
         <div class="card">
           <div class="card__img">
+            <img src="img/Captura.PNG" alt="Encriptador" width="300" height="150">
           </div>
           <div class="card__title">
             <h2>Encriptador de Texto</h2>
@@ -73,6 +75,7 @@
         </div>
         <div class="card">
           <div class="card__img">
+            <img src="img/sistema de ventas.PNG" alt="sistemajava" width="300" height="150">
           </div>
           <div class="card__title">
             <h2>Sistema de Venta en Java y Mysql</h2>
@@ -96,6 +99,7 @@
         </div>
         <div class="card">
           <div class="card__img">
+            <img src="img/Captura-porfolio.PNG" alt="portfolio" width="300" height="150">
           </div>
           <div class="card__title">
             <h2>Portafolio Github</h2>
@@ -120,9 +124,11 @@
       </div>
     </div>
   
-    <div class="contact-section">
+    <div id="contact" class="contact-section">
       <div class="contact-heading">
         <h2>Keep in touch</h2>
+        <div class="divider"></div>
+        <a href="https://beacons.ai/shalomsotuiontech" style="text-decoration:none"><h2>Click My Social Link Page Shalom Solution Tech</h2></a>
         <div class="divider"></div>
       </div>
       <div class="container-contact">
@@ -133,7 +139,7 @@
             <input type="text" placeholder="Name" class="input">
             <input type="email" placeholder="Email" class="input">
             <textarea name="message" placeholder="Place your message here..."></textarea>
-            <button type="submit" class="btn-submit">Send message</button>
+            <button type="submit" id="sendButton" class="btn-submit">Send message</button>
           </form>
         </div>
       </div>
@@ -141,7 +147,7 @@
   
     <footer class="footer"> 
       <div class="footer-content">
-        <h2>Rolando Salinas</h2>
+        <a href="https://beacons.ai/shalomsotuiontech" style="text-decoration:none"><h2>Rolando Salinas</h2></a>
         <h5>FullStack Developer</h5>
       </div>
       <div class="sotial-networks">
