@@ -2,62 +2,153 @@
 <html>
 <head>
   <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mi Portafolio</title>
-  <link rel="stylesheet" type="text/css" href="styles.css">
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.1/css/all.css">
   <script src="script.js" defer></script>
 </head>
 <body>
-  <header>
-    <nav>
-      <!-- Aquí coloca tu menú de navegación -->
-    </nav>
-  </header>
-
-  <section id="banner">
-    <!-- Aquí coloca tu banner -->
-  </section>
-
-  <section id="about">
-    <div class="container">
-      <h2>Sobre mí</h2>
-      <img src="logo.png" alt="Mi foto">
-      <p>Tu presentación personal aquí.</p>
+  <div class="wrapper">
+    <header>
+      <nav class="navbar">
+        <div class="brand">
+          <h2>R<span>S</span></h2>
+        </div>
+        <ul class="menu">
+          <li><a href="#"  class="active">Start</a></li>
+          <li><a href="#">About me</a></li>
+          <li><a href="#">Portafolio</a></li>
+          <li><a href="https://beacons.ai/shalomsotuiontech">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+  <main class="main"> 
+    <div class="info-content">
+      <h1>I'm <span>Rolando</span> Salinas</h1>
+       <p>Passionate <b>programmer for technology and software development</b>. With over <em>10 years of experience</em> in designing, implementing, and maintaining web and mobile applications. Specialized in programming languages such as Java, Python, and JavaScript, as well as in handling frameworks such as Spring and React Native. Always looking for new opportunities to continue growing professionally and adding value to innovative projects.</p>
+       <a download href="#"><button class="download-cv">Download CV</button></a>
     </div>
-  </section>
-
-  <section id="services">
-    <div class="container">
-      <h2>Servicios</h2>
-      <ul>
-        <li>Diseño y desarrollo de páginas web</li>
-        <!-- Agrega aquí otros servicios que ofrezcas -->
-      </ul>
+    <img src="img/yo-roly-removebg-preview.png" alt="Mi foto">
+    </main>
+    <div class="about">
+      <img src="img/331521980_1264788474382780_7472794212881922851_n.jpg" alt="Roly">
+      <div class="about-info">
+        <h2>About me</h2>
+        <div class="divider"></div>
+        <p>Currently, I am the <b>CEO at Shalom Solution Tech</b>, where we specialize in the development of applications of all kinds. <em>"Peaceful Solutions for your Company or Business"</em></p>
+        <p> With over 10 years of experience in designing, implementing, and applications development.</p>
+        <button class="download-cv">Read more</button>
+      </div>
     </div>
-  </section>
-
-  <section id="projects">
-    <div class="container">
-      <h2>Proyectos</h2>
-      <ul>
-        <li><a href="https://github.com/tu_usuario/proyecto_1">Proyecto 1</a></li>
-        <!-- Agrega aquí otros proyectos con sus respectivos enlaces a GitHub -->
-      </ul>
+    <div class="portfolio">
+      <div class="portfolio-heading">
+        <h2>My Portfolio</h2>
+        <div class="divider"></div>
+      </div>
+      <div class="container">
+        <div class="card">
+          <div class="card__img">
+          </div>
+          <div class="card__title">
+            <h2>Encriptador de Texto</h2>
+          </div>
+          <div class="card__proyect-links">
+            <a href="https://github.com/rolycore/Challenges-Oracle-ONE">
+              <i class="fab fa-github"></i>
+            </a>
+            <a href="https://rolycore.github.io/Challenges-Oracle-ONE/">
+              <i class="fas fa-globe-asia"></i>
+            </a>
+            <a href="">
+              <i class="fas fa-code"></i>
+            </a>
+          </div>
+          <div class="button-content">
+            <button class="project-details-button download-cv">
+              <a href="https://rolycore.github.io/Challenges-Oracle-ONE/">Project Details</a>
+            </button>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card__img">
+          </div>
+          <div class="card__title">
+            <h2>Sistema de Venta en Java y Mysql</h2>
+          </div>
+          <div class="card__proyect-links">
+            <a href="https://github.com/rolycore/sistemajava">
+              <i class="fab fa-github"></i>
+            </a>
+            <a href="">
+              <i class="fas fa-globe-asia"></i>
+            </a>
+            <a href="">
+              <i class="fas fa-code"></i>
+            </a>
+          </div>
+          <div class="button-content">
+            <button class="project-details-button download-cv">
+              <a href="https://github.com/rolycore/sistemajava">Project Details</a>
+            </button>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card__img">
+          </div>
+          <div class="card__title">
+            <h2>Portafolio Github</h2>
+          </div>
+          <div class="card__proyect-links">
+            <a href="https://github.com/rolycore">
+              <i class="fab fa-github"></i>
+            </a>
+            <a href="">
+              <i class="fas fa-globe-asia"></i>
+            </a>
+            <a href="">
+              <i class="fas fa-code"></i>
+            </a>
+          </div>
+          <div class="button-content">
+            <button class="project-details-button download-cv">
+              <a href="https://github.com/rolycore">Project Details</a>
+            </button>
+          </div>
+        </div>
+      </div>
     </div>
-  </section>
-
-  <section id="contact">
-    <div class="container">
-      <h2>Contacto</h2>
-      <p>Encuéntrame en mis redes sociales:</p>
-      <ul>
-        <li><a href="https://www.linkedin.com/tu_perfil">LinkedIn</a></li>
-        <!-- Agrega aquí otros enlaces a tus redes sociales -->
-      </ul>
+  
+    <div class="contact-section">
+      <div class="contact-heading">
+        <h2>Keep in touch</h2>
+        <div class="divider"></div>
+      </div>
+      <div class="container-contact">
+        <img src="img/logo.png" alt="shalomsolutiontech">
+        <div class="contact-form">
+          <h4>Send me a message...</h4>
+          <form class="form-group">
+            <input type="text" placeholder="Name" class="input">
+            <input type="email" placeholder="Email" class="input">
+            <textarea name="message" placeholder="Place your message here..."></textarea>
+            <button type="submit" class="btn-submit">Send message</button>
+          </form>
+        </div>
+      </div>
     </div>
-  </section>
-
-  <footer>
-    <!-- Aquí coloca el contenido de tu pie de página -->
-  </footer>
+  
+    <footer class="footer"> 
+      <div class="footer-content">
+        <h2>Rolando Salinas</h2>
+        <h5>FullStack Developer</h5>
+      </div>
+      <div class="sotial-networks">
+        <a href="https://instagram.com/rolandosalinasoficial?igshid=ZDdkNTZiNTM="><i class="fab fa-instagram" href=""></i></a>
+        <a href="https://www.linkedin.com/in/rolando-salinas-432125187/"><i class="fab fa-linkedin" ></i></a>
+       <a href="https://www.facebook.com/shalomsolutiontech"> <i class="fab fa-facebook"></i></a>
+      </div>
+    </footer>
 </body>
 </html>
