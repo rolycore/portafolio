@@ -16,6 +16,8 @@ body {
   padding: 20px;
 }
 
+
+
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -194,6 +196,17 @@ h1 {
   justify-content: center;
 }
 
+.slick-slider {
+  width: 750px;
+
+  margin: 150px auto;
+}
+
+.slide{
+  
+background-color: #4a4b55;
+}
+
 .card {
   width: 300px;
   background-color: #2b3058;
@@ -210,7 +223,11 @@ background-image: url(img/Captura.png);
 .card__title {
   padding: 20px;
 }
-
+.lenguajes {
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+}
 .card__proyect-links {
   display: flex;
   justify-content: space-evenly;
