@@ -242,9 +242,9 @@ background-image: url(img/Captura.png);
   padding: 20px;
 }
 .lenguajes {
-  text-align: center;
   display: flex;
-  justify-content: space-between;
+  align-items: center;
+  
 }
 .card__proyect-links {
   display: flex;
@@ -503,3 +503,4 @@ background-image: url(img/Captura.png);
 .sotial-networks i {
   font-size: 1.5em;
 }
+   
