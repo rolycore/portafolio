@@ -9,23 +9,27 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.1/css/all.css">
   <link rel="stylesheet" type="text/css" href="./slick/slick.css">
   <link rel="stylesheet" type="text/css" href="./slick/slick-theme.css">
+ 
 
  
 </head>
 <body>
   <div class="wrapper">
     <header>
-      <nav class="navbar">
-        <div class="brand">
+      <div class="navbar" id="myTopnav">
+        <div class="brand"  >
           <h2>R<span>S</span></h2>
         </div>
         <ul class="menu">
-          <li><a href="#main"  class="active">Start</a></li>
+          <li><a href="#main" class="active">Start</a></li>
           <li><a href="#about">About me</a></li>
           <li><a href="#portfolio">Portfolio</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
-      </nav>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
     </header>
   <main id="main" class="main"> 
     <div class="info-content">
@@ -33,7 +37,10 @@
        <p>Passionate <b>programmer for technology and software development</b>. With over <em>10 years of experience</em> in designing, implementing, and maintaining web and mobile applications. Specialized in programming languages such as Java, Python, and JavaScript, as well as in handling frameworks such as Spring and React Native. Always looking for new opportunities to continue growing professionally and adding value to innovative projects.</p>
        <a download href="files/cv - Rolando Salinas.pdf"><button class="download-cv">Download CV</button></a>
     </div>
-    <img src="img/yo-roly-removebg-preview.png" alt="Mi foto">
+    <div class="imgmain">
+      <img src="img/yo-roly-removebg-preview.png" alt="Mi foto">
+    </div>
+    
     </main>
     <div id="about"class="about">
       <img src="img/331521980_1264788474382780_7472794212881922851_n.jpg" alt="Roly">
@@ -374,7 +381,9 @@
         <div class="divider"></div>
       </div>
       <div class="container-contact">
-        <img src="img/logo.png" alt="shalomsolutiontech">
+        <div class="logo">
+          <img src="img/logo.png" alt="shalomsolutiontech">
+        </div>       
         <div class="contact-form">
           <h4>Send me a message...</h4>
           <form class="form-group">
@@ -389,21 +398,25 @@
   
     <footer class="footer"> 
       <div class="footer-content">
-        <a href="https://beacons.ai/shalomsotuiontech" style="text-decoration:none"><h2>Rolando Salinas</h2></a>
+        <a href="https://beacons.ai/shalomsotuiontech" style="text-decoration:none"><h2>Rolando Salinas </h2></a>
         <h5>FullStack Developer</h5>
+        <p>&copy; 2023</p>
       </div>
       <div class="sotial-networks">
         <a href="https://instagram.com/rolandosalinasoficial?igshid=ZDdkNTZiNTM="><i class="fab fa-instagram" href=""></i></a>
         <a href="https://www.linkedin.com/in/rolando-salinas-432125187/"><i class="fab fa-linkedin" ></i></a>
        <a href="https://www.facebook.com/shalomsolutiontech"> <i class="fab fa-facebook"></i></a>
-       <nav class="navbar">
+       <form action="https://www.paypal.com/donate" method="post" target="_top">
+        <input type="hidden" name="hosted_button_id" value="2LRTCCGTATXBU" />
+        <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
+        </form>
       </div>
     </footer>
 
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js" charset="utf-8"></script>
     <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js" charset="utf-8"></script>
     <script type="text/javascript" src="slick/slick.min.js" charset="utf-8"></script>
- 
+    <!--script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" charset="utf-8"></!--script>-->
     
     <script type="text/javascript">
     $(".slideshow").slick({
